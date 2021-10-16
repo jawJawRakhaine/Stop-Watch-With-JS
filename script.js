@@ -53,7 +53,7 @@ function startTime() {
     seconds = 0;
     outputSeconds.innerHTML = seconds;
     minutes++;
-    if (minutes < 9) {
+    if (minutes < 10) {
       outputMinutes.innerHTML = "0" + minutes;
     } else {
       outputMinutes.innerHTML = minutes;
