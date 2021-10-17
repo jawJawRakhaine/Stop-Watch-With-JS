@@ -1,7 +1,7 @@
+var minutes = 0;
 var seconds = 00;
 var tens = 00;
 var Interval;
-var minutes = 0;
 
 var outputMinutes = document.getElementById("minute");
 var outputSeconds = document.getElementById("second");
@@ -22,8 +22,10 @@ buttonStop.addEventListener("click", () => {
 
 buttonReset.addEventListener("click", () => {
   clearInterval(Interval);
+  minutes = "00";
   seconds = "00";
   tens = "00";
+  outputMinutes.innerHTML = minutes;
   outputSeconds.innerHTML = seconds;
   outputTens.innerHTML = tens;
 });
